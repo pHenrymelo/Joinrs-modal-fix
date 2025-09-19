@@ -20,13 +20,12 @@ export function JobApplicationModal({onClose}: JobApplicationModalProps) {
 
     <div 
     onClick={(e) => e.stopPropagation()} 
-    className=" flex flex-col gap-4 bg-pinkJoinrs text-white rounded-2xl px-8 py-6 w-1/2 h-3/4 mx-auto my-auto"
+    className=" flex flex-col gap-4 bg-pinkJoinrs text-white rounded-2xl px-4 md:px-8 py-6 w-5/6 md:w-2/3 xl:w-1/2 h-3/4 mx-auto my-auto"
     >
-
       <div className=" flex justify-between mb-6">
-        <ChevronLeft className="cursor-pointer" size={32} onClick={onClose}/>
-        <span className=" font-bold text-xl mx-auto max-w-1/2">Candidate-se em Joinrs Brasil</span>
-        <X className="cursor-pointer" size={32} onClick={onClose}/>
+        <ChevronLeft className="cursor-pointer w-6 h-6 md:w-8 md:h-8" size={32} onClick={onClose}/>
+        <span className=" font-bold text-md md:text-lg lg:text-xl mx-auto max-w-5/6">Candidate-se em Joinrs Brasil</span>
+        <X className="cursor-pointer  w-6 h-6 md:w-8 md:h-8" onClick={onClose}/>
       </div>
       <div className="flex justify-between items-center">
         <img src={eyes} alt="eyes open" width={90}/>
@@ -35,7 +34,7 @@ export function JobApplicationModal({onClose}: JobApplicationModalProps) {
           <span className=" absolute inset-0 flex items-center justify-center text-xs font-semibold text-white">100%</span>
         </div>
       </div>
-      <span className=" flex text-white text-2xl font-bold">Defina o local de trabalho</span>
+      <span className=" flex text-white text-lg md:text-2xl font-bold">Defina o local de trabalho</span>
       <div className=" flex flex-col gap-2">
         <span>Esta oferta de emprego envolve a seguinte modalidade:</span>
         <button 
